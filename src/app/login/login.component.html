@@ -1,0 +1,91 @@
+<div class="b" style="background:#3378f0;">
+
+    <div class="b" layout="row" layout-align="start center">
+        <div class="v" style="width:50%;" layout="column" layout-align="center center">
+            <img style="height:50%;" src="assets/images/smartcitylogo.jpg">
+            <h5 class="px40 hw" style="margin-top: 30px;font-family: PoppinsSemiBold;color: white;">पुणे स्मार्ट सिटी डेव्हलपमेंट कॉर्पोरेशन लिमिटेड</h5>
+
+        </div>
+        <div class="v" style="width:50%;" layout="row" layout-align="center center">
+            <div class="vh brdRad" style="width:90%;height:70%;background:#fff;" layout="column" layout-align="start center">
+                <div class="h" style="height:150px;" layout="row" layout-align="center center">
+                <!-- <div class="vh" (click)="backPageTwo()" style="width: 40px; height: 40px; border-radius: 50%; background: gray; position: absolute; left: 40px" layout="row" layout-align="center center">
+                    <img style="transform: rotate(180deg);" src="assets/images/Group 42532.svg">
+                </div>  
+                <div class="vh" style="width:120px;height:30px;border-radius:5px;border:1px solid #3378f0" layout="row" layout-align="start center">
+                        <div class="v" style="width:50%;background:#3378f0" layout="row" layout-align="center center">
+                            <h5 class="px13 clr4 lw">मराठी</h5>
+                        </div>
+                        <div class="v" style="width:50%;" layout="row" layout-align="center center">
+                        <h5 class="px13" style="color:#3378f0">English</h5>
+                    </div>
+                    </div> -->
+                    <!-- <img class="back-gray" src="assets/images/back-gray.svg" [routerLink]="['/user-boarding']"> -->
+                    <div class="vh" style="width:120px;height:30px;border-radius:5px;border:1px solid #3378f0" layout="row" layout-align="start center">
+                        <div class="v" (click)="changeLanguage('mr')" [ngStyle]="{'background-color': language == 'mr' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                            <h5 class="px13 clr4 lw" [ngStyle]="{'color': language == 'en' ? '#3378f0' : 'white' }">मराठी</h5>
+                        </div>
+                        <div class="v" (click)="changeLanguage('en')"  [ngStyle]="{'background-color': language == 'en' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                          <h5 class="px13" [ngStyle]="{'color': language == 'mr' ? '#3378f0' : 'white' }">English</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="h" style="height:calc(100% - 150px);">
+                    <div class="h" style="height:30%;" layout="column" layout-align="start center">
+                        <h5 class="px40 hw" style="font-family: PoppinsSemiBold;">{{ 'login.textone' | translate }}</h5>
+                        <!-- <h5 class="px16" style="font-family: PoppinsThin; width: 345px;margin: 25px 0; text-align: center;">{{ 'login.texttwo' | translate }} <b><a class="phonenumberhelp" href="tel:+919881099400">+91 9881099400</a></b></h5> -->
+                    </div>
+                    <div class="h" style="height:70%;">
+                        <div class="h" style="height:auto;" layout="column" layout-align="start center">
+                            <div class="vh brd bBrd" style="width: 50%;height: 40px;border-width: 0px 0px 1.5px 0px;">
+                                <input id="userID" [(ngModel)]="mobilenumber" style="font-family: PoppinsSemiBold;" type="text" placeholder="{{ 'login.placeholder_one' | translate }}"  required="" autocomplete="off" class="bigHeading mw">
+                            </div>
+                            <div class="vh brd bBrd" style="width: 50%;height: 40px;border-width: 0px 0px 1.5px 0px;" layout="row" layout-align="start center">
+                                <input id="password" [(ngModel)]="password"  style="font-family: PoppinsSemiBold;" placeholder="{{ 'login.placeholder_two' | translate }}" formcontrolname="password" required="" spellcheck="false" class="bigHeading mw" type="{{type}}">
+                                <svg (click)="showhidepassword()" viewBox="0 0 22 22" style="height: 20px;" class="pt svgsmall"><g id="ic-unsee" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" opacity="0.38"> <g id="Group"> <polygon id="Path" points="0 0 22 0 22 22 0 22"></polygon> <path d="M11,5.95833333 C14.4741667,5.95833333 17.5725,7.91083333 19.085,11 C17.5725,14.0891667 14.4833333,16.0416667 11,16.0416667 C7.51666667,16.0416667 4.4275,14.0891667 2.915,11 C4.4275,7.91083333 7.52583333,5.95833333 11,5.95833333 L11,5.95833333 Z M11,4.125 C6.41666667,4.125 2.5025,6.97583333 0.916666667,11 C2.5025,15.0241667 6.41666667,17.875 11,17.875 C15.5833333,17.875 19.4975,15.0241667 21.0833333,11 C19.4975,6.97583333 15.5833333,4.125 11,4.125 Z M11,8.70833333 C12.265,8.70833333 13.2916667,9.735 13.2916667,11 C13.2916667,12.265 12.265,13.2916667 11,13.2916667 C9.735,13.2916667 8.70833333,12.265 8.70833333,11 C8.70833333,9.735 9.735,8.70833333 11,8.70833333 L11,8.70833333 Z M11,6.875 C8.72666667,6.875 6.875,8.72666667 6.875,11 C6.875,13.2733333 8.72666667,15.125 11,15.125 C13.2733333,15.125 15.125,13.2733333 15.125,11 C15.125,8.72666667 13.2733333,6.875 11,6.875 Z" id="Shape" fill="#000000" fill-rule="nonzero"></path> <path d="M2.915,17.875 L19.085,4.125" id="Line-16" stroke="#000000" stroke-width="2" stroke-linecap="round"></path> </g> </g></svg>
+                            </div>
+                            <div class="vh bBrd" style="width: 50%;height: 40px;margin: 10px;" layout="row" layout-align="start center">
+                                <input id="iAccpt"  [(ngModel)]="iaccept" style="font-family: PoppinsSemiBold;width: auto;margin-right: 15px;" formcontrolname="iAccept" required="" spellcheck="false" class="bigHeading mw" type="checkbox">   
+                                <p *ngIf="applanguage == 'en'" style="font-size: 12px;z-index: 100;">
+                                    <span>{{ 'login.iacceptPP' | translate }}</span>&nbsp;
+                                    <a href='https://marathidigimadhyam.com/privacy-policy' target="_blank"><b>{{ 'login.pptext' | translate }}</b></a>&nbsp;
+                                    <span>{{ 'login.and' | translate }}</span>&nbsp;
+                                    <a href='https://marathidigimadhyam.com/terms-and-conditions' target="_blank"><b>{{ 'login.tctext' | translate }}</b></a>
+                                  </p>
+                                  <p *ngIf="applanguage == 'mr'" style="font-size: 12px;z-index: 100;">
+                                    <span>आपण दिलेल्या सर्व</span>&nbsp;
+                                    <a href='https://marathidigimadhyam.com/privacy-policy' target="_blank"><b>privacy policy</b></a>&nbsp;
+                                    <span>आणि</span>&nbsp;
+                                    <a href='https://marathidigimadhyam.com/terms-and-conditions' target="_blank"><b>terms conditions</b></a>&nbsp;
+                                    <span>मला मान्य आहेत</span>
+                                  </p>   
+                            </div>
+                            <!-- <div class="vh" style="width:50%;height:35px;" layout="row" layout-align="end center">
+                            <h5 id="RP" class="px13 clr5 mw pt lm">{{ 'login.forgotlink' | translate }}</h5>
+                            </div> -->
+                        </div>
+                        <div class="h" style="height:85px;" layout="column" layout-align="center center">
+                            <div class="vh brdRad pt btnBg" (click)="loginEvent()" style="width:280px;height:45px;" layout="row" layout-align="center center">
+                                <h5 class="px18 clr4 hw" style="font-family: PoppinsSemiBold;">{{ 'login.login' | translate }}</h5>
+                            </div>
+                        </div>
+                        <!-- <div class="h" style="height:60px;" layout="column" layout-align="center center">
+                            <h5 class="px13" style="font-family: PoppinsThin;">Or</h5>
+                        </div>
+                        <div class="h" style="height:50px;" layout="column" layout-align="center center">
+                            <h5 class="px16">Sign in with</h5>
+                        </div>
+                        <div class="h" style="height:60px;" layout="row" layout-align="center center">
+                            <div class="vh m" style="width:100px;height:40px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" layout="row" layout-align="center center">
+                            <h5 class="px13">Google</h5>
+                            </div>
+                            <div class="vh m" style="width:120px;height:40px;box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;" layout="row" layout-align="center center">
+                            <h5 class="px13">Facebook</h5>
+                            </div>
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>        

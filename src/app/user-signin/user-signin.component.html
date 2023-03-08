@@ -1,0 +1,44 @@
+<div class="b" style="background:#3378f0;">
+
+    <div class="b" layout="row" layout-align="start center">
+        <div class="v" style="width:50%;" layout="row" layout-align="center center">
+        <img style="width: 50%;" src="assets/images/signup.svg">
+        </div>
+        <div class="v" style="width:50%;" layout="row" layout-align="center center">
+            <div class="vh brdRad" style="width:90%;height:60%;background:#fff;" layout="column" layout-align="start center">
+                <div class="h" style="height:100px;" layout="row" layout-align="center center">
+                    <!-- <div class="vh" [routerLink]="['/login']" style="width: 40px; height: 40px; border-radius: 50%; background: gray; position: absolute; left: 40px" layout="row" layout-align="center center">
+                        <img style="transform: rotate(180deg);" src="assets/images/Group 42532.svg">
+                    </div>  -->
+                    <img class="back-gray" src="assets/images/back-gray.svg" [routerLink]="['/login']">
+                    <div class="vh" style="width:120px;height:30px;border-radius:5px;border:1px solid #3378f0" layout="row" layout-align="start center">
+                        <div class="v" (click)="changeLanguage('mr')" [ngStyle]="{'background-color': language == 'mr' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                            <h5 class="px13 clr4 lw" [ngStyle]="{'color': language == 'en' ? '#3378f0' : 'white' }">मराठी</h5>
+                        </div>
+                        <div class="v" (click)="changeLanguage('en')"  [ngStyle]="{'background-color': language == 'en' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                          <h5 class="px13" [ngStyle]="{'color': language == 'mr' ? '#3378f0' : 'white' }">English</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="h" style="height:calc(100% - 100px);">
+                    <div class="h" style="height:33%;padding-top: 25px;" layout="column" layout-align="start center">
+                    <h5 class="px40 hw" style="font-family: PoppinsSemiBold;">{{ 'signup.textone' | translate }}</h5>
+                    <h5 class="px16" style="font-family: PoppinsThin;margin: 25px 0; width: 345px; text-align: center;">{{ 'signup.texttwo' | translate }} <b><a class="phonenumberhelp" href="tel:+919881099400">+91 9881099400</a></b></h5>
+                    </div>
+                    <div class="h" style="height:33%;padding: 25px 0;" layout="column" layout-align="start center">
+                        <h5 class="px16">{{ 'signup.textthree' | translate }}</h5> 
+                        <div class="vh brdRad pt" style="width:280px;height:45px;background:#3378f0;margin-top: 15px;" layout="row" layout-align="center center">
+                            <h5 class="px18 clr4 hw" style="font-family: PoppinsSemiBold;">{{ 'signup.btncreateaccount' | translate }}</h5>
+                        </div>
+                    </div>
+                    <div class="h" style="height:33%;padding: 25px 0;background: #F5FAFF;border-bottom-right-radius: 35px; border-bottom-left-radius: 35px;" layout="column" layout-align="start center">
+                        <h5 class="px16">{{ 'signup.textfour' | translate }}</h5> 
+                        <div class="vh brdRad pt" [routerLink]="['/login']" style="width:280px;height:45px;background:#3378f0;margin-top: 15px;" layout="row" layout-align="center center">
+                            <h5 class="px18 clr4 hw" style="font-family: PoppinsSemiBold;">{{ 'signup.btnsignin' | translate }}</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>  

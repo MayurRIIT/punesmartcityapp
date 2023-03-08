@@ -1,0 +1,89 @@
+<div class="b" style="background:#3378f0;">
+    <div class="b" *ngIf="onBoardingPageIndex == 1" layout="row" layout-align="start center">
+      <div class="v" style="width:50%;" layout="row" layout-align="center center">
+        <img class="login-left-img" src="assets/images/Group 49585.svg">
+      </div>
+      <div class="v" style="width:50%;" layout="row" layout-align="center center">
+            <div class="vh brdRad" style="width:90%;height:60%;background:#fff;" layout="column" layout-align="start center">
+                <div class="h" style="height:150px;" layout="row" layout-align="center center">
+                    <div class="vh" style="width:120px;height:30px;border-radius:5px;border:1px solid #3378f0" layout="row" layout-align="start center">
+                        <div class="v" (click)="changeLanguage('mr')" [ngStyle]="{'background-color': language == 'mr' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                            <h5 class="px13 clr4 lw" [ngStyle]="{'color': language == 'en' ? '#3378f0' : 'white' }">मराठी</h5>
+                        </div>
+                        <div class="v" (click)="changeLanguage('en')"  [ngStyle]="{'background-color': language == 'en' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                        <h5 class="px13" [ngStyle]="{'color': language == 'mr' ? '#3378f0' : 'white' }">English</h5>
+                    </div>
+                    </div>
+                </div>
+                <div class="h" style="height:calc(100% - 350px);" layout="column" layout-align="start center">
+                    <h5 class="px40 hw" style="font-family: PoppinsSemiBold;">{{ 'onboarding.subTagline_one' | translate }}</h5>
+                    <h5 class="px22" style="font-family: PoppinsThin; width: 345px; text-align: center;margin-top: 3vh;">{{ 'onboarding.tagline_one' | translate }}</h5>
+                </div>
+                <div class="h" style="height:200px;background: #F5FAFF;border-bottom-right-radius: 35px; border-bottom-left-radius: 35px;" layout="row" layout-align="center center">
+                    <div class="vh brdRad pt" style="width:280px;height:45px;background:#3378f0" (click)="gotoPage(2)" layout="row" layout-align="center center">
+                        <h5 class="px18 clr4 hw" style="font-family: PoppinsSemiBold;">{{ 'onboarding.next' | translate }}</h5>
+                    </div>
+                </div>
+            </div>
+      </div>
+    </div>
+    <div class="b" *ngIf="onBoardingPageIndex == 2" layout="row" layout-align="start center">
+        <div class="v" style="width:50%;" layout="row" layout-align="center center">
+          <img class="login-left-img" src="assets/images/study1.svg">
+        </div>
+        <div class="v" style="width:50%;" layout="row" layout-align="center center">
+            <div class="vh brdRad" style="width:90%;height:60%;background:#fff;" layout="column" layout-align="start center">
+                <div class="h" style="height:150px;" layout="row" layout-align="center center">
+                    <img class="back-gray" src="assets/images/back-gray.svg" (click)="onBoardingPageIndex=1">
+
+                    <div class="vh" style="width:120px;height:30px;border-radius:5px;border:1px solid #3378f0" layout="row" layout-align="start center">
+                        <div class="v" (click)="changeLanguage('mr')" [ngStyle]="{'background-color': language == 'mr' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                            <h5 class="px13 clr4 lw" [ngStyle]="{'color': language == 'en' ? '#3378f0' : 'white' }">मराठी</h5>
+                        </div>
+                        <div class="v" (click)="changeLanguage('en')"  [ngStyle]="{'background-color': language == 'en' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                          <h5 class="px13" [ngStyle]="{'color': language == 'mr' ? '#3378f0' : 'white' }">English</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="h" style="height:calc(100% - 350px);" layout="column" layout-align="start center">
+                    <h5 class="px40 hw" style="font-family: PoppinsSemiBold;">{{ 'onboarding.subTagline_two' | translate }}</h5>
+                    <h5 class="px22" style="font-family: PoppinsThin; width: 345px; text-align: center;margin-top: 3vh;">{{ 'onboarding.tagline_two' | translate }}</h5>
+                </div>
+                <div class="h" style="height:200px;background: #F5FAFF;border-bottom-right-radius: 35px; border-bottom-left-radius: 35px;" layout="row" layout-align="center center">
+                    <div class="vh brdRad pt" style="width:280px;height:45px;background:#3378f0" (click)="gotoPage(3)" layout="row" layout-align="center center">
+                        <h5 class="px18 clr4 hw" style="font-family: PoppinsSemiBold;">{{ 'onboarding.next' | translate }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="b" *ngIf="onBoardingPageIndex == 3" layout="row" layout-align="start center">
+        <div class="v" style="width:50%;" layout="row" layout-align="center center">
+          <img class="login-left-img" src="assets/images/study21.svg">
+        </div>
+        <div class="v" style="width:50%;" layout="row" layout-align="center center">
+            <div class="vh brdRad" style="width:90%;height:60%;background:#fff;" layout="column" layout-align="start center">
+                <div class="h" style="height:150px;" layout="row" layout-align="center center">
+                    <img class="back-gray" src="assets/images/back-gray.svg" (click)="onBoardingPageIndex=2">
+                    <div class="vh" style="width:120px;height:30px;border-radius:5px;border:1px solid #3378f0" layout="row" layout-align="start center">
+                        <div class="v" (click)="changeLanguage('mr')" [ngStyle]="{'background-color': language == 'mr' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                            <h5 class="px13 clr4 lw" [ngStyle]="{'color': language == 'en' ? '#3378f0' : 'white' }">मराठी</h5>
+                        </div>
+                        <div class="v" (click)="changeLanguage('en')"  [ngStyle]="{'background-color': language == 'en' ? '#3378f0' : 'white' }"  style="cursor:pointer;width:50%;" layout="row" layout-align="center center">
+                          <h5 class="px13" [ngStyle]="{'color': language == 'mr' ? '#3378f0' : 'white' }">English</h5>
+                      </div>
+                    </div>
+                </div>
+                <div class="h" style="height:calc(100% - 350px);" layout="column" layout-align="start center">
+                    <h5 class="px40 hw" style="font-family: PoppinsSemiBold;">{{ 'onboarding.subTagline_three' | translate }}</h5>
+                    <h5 class="px22" style="font-family: PoppinsThin; width: 345px; text-align: center;margin-top: 3vh;">{{ 'onboarding.tagline_three' | translate }}</h5>
+                </div>
+                <div class="h" style="height:200px;background: #F5FAFF;border-bottom-right-radius: 35px; border-bottom-left-radius: 35px;" layout="row" layout-align="center center">
+                    <div class="vh brdRad pt" style="width:280px;height:45px;background:#3378f0" [routerLink]="['/user-sigin']" layout="row" layout-align="center center">
+                        <h5 class="px18 clr4 hw" style="font-family: PoppinsSemiBold;" >{{ 'onboarding.getstarted' | translate }}</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>    

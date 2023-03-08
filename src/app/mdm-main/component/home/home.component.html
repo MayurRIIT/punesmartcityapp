@@ -1,0 +1,83 @@
+<div class="b" style="overflow-x:hidden;overflow-y: auto;">
+    <img src="assets/images/2.svg" style="width: 50%;  position: absolute; right: 0; opacity: 0.4;">
+    <div class="h" style="height:170px;" layout="row" layout-align="start center">
+        <div class="v" style="width:400px;padding:0px 30px;" layout="row" layout-align="start center">
+            <div class="vh" style="width:80px;height:80px;">
+              <img style="width:100%;border-radius:50%;background:#fcd9d7" src={{profilePic}}>
+            </div>
+            <div class="v" style="width:calc(100% - 80px);padding: 0px 25px;" layout="column" layout-align="center center">
+              <div class="h" layout="row" layout-align="start center">
+                <h5 class="px40 hw" style="font-family: PoppinsSemiBold;">Hi {{name}}</h5>
+              </div>
+              <div class="h" layout="row" layout-align="start center">
+                <h5 class="px16" style="font-family: PoppinsThin; text-align: center;">{{ 'home.class' | translate }}: {{ClassGrade}}</h5>
+                <h5 class="px16 lp" style="font-family: PoppinsThin;text-align: center;">Level 1</h5>
+              </div>
+            </div>
+        </div>
+    </div>
+    <div class="h" style="height:auto;padding: 0px 30px;">
+      <div class="h" style="height:70px;" layout="row" layout-align="start center">
+        <h5 class="px18" style="font-family: PoppinsThin; text-align: center;">My Subjects</h5>
+      </div>
+      <div class="h" style="height:auto;">
+          <div class="vh" style="height: 150px;padding: 15px;width: 200px;" (click)="onSubjectClick(subject)" *ngFor="let subject of subjects;let i = index;" [ngStyle]="{ 'background-color' : subject.colorCode }">
+              <div class="b" layout="column" layout-align="center center">
+                  <div class="h" style="margin-bottom: 15px;" layout="row" layout-align="center center">
+                    <!-- <img src="{{subject.thumbnail}}"> -->
+                    <p class="circular-p">{{subject.altername}}</p>
+                  </div>
+                  <div class="h" style="" layout="row" layout-align="center center">
+                    <h5 class="px16 lw">{{subject.name}}</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <div *ngIf="watchedHistory.length > 0"  class="h" style="height:200px;padding: 0px 30px;">
+      <div class="h" style="height:70px;" layout="row" layout-align="start center">
+        <h5 class="px18" style="font-family: PoppinsThin; text-align: center;">{{ 'common.continue_reading' | translate }}</h5>
+      </div>
+      <div class="h" style="height:calc(100% - 70px);width: 100%;overflow: hidden;" >
+          <div class="v" *ngFor="let history of watchedHistory;let i = index;" style="width:400px;padding:0px 20px;">
+              <div class="b" style="box-shadow: 0 0 15px 5px rgb(232 234 236 / 80%);height: 90%;" layout="row" layout-align="start center">
+                  <div class="v brdRad p" style="width:40%;" layout="row" layout-align="center center">
+                    <img src ="{{history.videoId.thumbnail}}" style="height:100%;width: 100%;">
+                  </div>
+                  <div class="v lp" style="width:60%;" layout="column" layout-align="center start">
+                    <h5 class="px13 lw">{{history.subjectId.name}}</h5>
+                    <h5 class="px16 lw tm">{{ history.videoId.title }}</h5>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </div>
+    <!-- <div class="h" style="height:300px;padding: 0px 30px;" layout="row" layout-align="center center">
+      <div class="h" style="height:200px;">
+        <div class="v" (click)="openDrawer('swadhyay')" style="width:33.33%;padding:0px 20px;">
+          <div class="b" style="background-image: url('assets/images/bgOne.svg'); box-shadow: 0 0 15px 5px rgb(232 234 236 / 80%);height: 90%;" layout="column" layout-align="start center">
+              <h5 class="px22 tm" style="color : #3cd83c">{{ 'swadhyaypdf.text_one' | translate }}</h5>
+              <h5 class="px16 tm" style="font-family: PoppinsThin; text-align: center;">{{ 'swadhyaypdf.text_two' | translate }}</h5>
+          </div>
+        </div>
+        <div class="v" (click)="openDrawer('audio')" style="width:33.33%;padding:0px 20px;">
+          <div class="b" style="background-image: url('assets/images/bg.svg'); box-shadow: 0 0 15px 5px rgb(232 234 236 / 80%);height: 90%;" layout="column" layout-align="start center">
+              <h5 class="px22 tm" style="color : #5d5dce">{{ 'swadhyayaudio.text_one' | translate }}</h5>
+              <h5 class="px16 tm" style="font-family: PoppinsThin; text-align: center;">{{ 'swadhyayaudio.text_two' | translate }}</h5>
+          </div>
+        </div>
+        <div class="v" (click)="openDrawer('takeatest')" style="width:33.33%;padding:0px 20px;">
+          <div class="b"style="background-image: url('assets/images/bgTwo.svg');box-shadow: 0 0 15px 5px rgb(232 234 236 / 80%);height: 90%;" layout="column" layout-align="start center">
+              <h5 class="px22 tm" style="color : #f17070">{{ 'takeatestsubject.text_one' | translate }}</h5>
+              <h5 class="px16 tm" style="font-family: PoppinsThin; text-align: center;">{{ 'takeatestchapter.text_two' | translate }}</h5>
+          </div>
+        </div>
+      </div>  
+    </div>
+    <div class="h" style="padding: 0px 30px;height: 300px;">
+      <carousel [images]="bannerImages" style="width: 100%;height: 100%;" [dots]="true" [loop]="true" [autoplay]= "true" [pauseOnHover]="true" [cellsToShow]="2"></carousel>
+    </div> -->
+    <div class="h" style="height:65px;" layout="row" layout-align="center center">
+    </div>
+  </div>
+  

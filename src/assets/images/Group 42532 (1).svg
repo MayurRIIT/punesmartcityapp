@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" viewBox="0 0 33 33">
+  <g id="Group_42532" data-name="Group 42532" transform="translate(-307.5 -212.5)">
+    <path id="Shape" d="M16,0A16,16,0,1,0,32,16,16,16,0,0,0,16,0Z" transform="translate(308 213)" fill="#fff" stroke="rgba(0,0,0,0)" stroke-width="1" opacity="0.8"/>
+    <g id="Icons_72_back" data-name="Icons/72/back" transform="translate(312 217)">
+      <path id="Path" d="M-.617,0H-24V23.383H-.617Z" transform="translate(24)" fill="none"/>
+      <path id="Path-2" data-name="Path" d="M-16,7.691a.96.96,0,0,1,.96-.959H-4.312L-9,2.048A.956.956,0,0,1-9,.693l0,0a.961.961,0,0,1,1.356,0l6.327,6.32a.959.959,0,0,1,0,1.357l-6.327,6.32a.958.958,0,0,1-1.354,0h0a.957.957,0,0,1,0-1.353l4.682-4.686H-15.04A.96.96,0,0,1-16,7.691Z" transform="translate(20 4)" fill="#212121"/>
+    </g>
+  </g>
+</svg>

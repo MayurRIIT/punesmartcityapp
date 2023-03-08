@@ -1,0 +1,14 @@
+.back-gray{
+    background: rgba(15, 15, 45, 0.5);
+    border-radius: 100%;
+    width: 25px;
+    height: 25px;
+    padding: 7px;
+    position: absolute;
+    left: 45px;
+    z-index: 100;
+}
+
+.login-left-img{
+    width: 50%;
+}

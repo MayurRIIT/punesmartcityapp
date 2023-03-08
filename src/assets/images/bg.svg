@@ -1,0 +1,334 @@
+<svg id="bg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="354" height="275" viewBox="0 0 354 275">
+  <defs>
+    <linearGradient id="linear-gradient" x1="-0.678" y1="-0.783" x2="1" y2="1.019" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ecf0f5"/>
+      <stop offset="1" stop-color="#fff"/>
+    </linearGradient>
+    <filter id="background-color" x="-30" y="172" width="414" height="71" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <filter id="background-color-2" x="-30" y="-26" width="414" height="335" filterUnits="userSpaceOnUse">
+      <feOffset dy="4" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="10" result="blur-2"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur-2"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+    <linearGradient id="linear-gradient-3" x1="0.175" y1="0.5" x2="0.878" y2="0.5" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3c80f7"/>
+      <stop offset="1" stop-color="#1058d1"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-4" x1="1" y1="1" x2="0" y2="-0.559" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#3e7eff" stop-opacity="0.102"/>
+      <stop offset="1" stop-color="#fff" stop-opacity="0.102"/>
+    </linearGradient>
+    <clipPath id="clip-path">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#background-color-2)">
+        <rect id="background-color-3" data-name="background-color" width="354" height="275" rx="8" fill="url(#linear-gradient)"/>
+      </g>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#background-color)">
+        <path id="background-color-4" data-name="background-color" d="M0,0H354a0,0,0,0,1,0,0V3a8,8,0,0,1-8,8H8A8,8,0,0,1,0,3V0A0,0,0,0,1,0,0Z" transform="translate(0 198)" fill="url(#linear-gradient)"/>
+      </g>
+    </clipPath>
+    <clipPath id="clip-path-3">
+      <path id="Path_128695" data-name="Path 128695" d="M268.484,186.741l-.01-3.208a2.242,2.242,0,0,1-1.323,1.847l.008,3.206A2.243,2.243,0,0,0,268.484,186.741Z" transform="translate(-267.15 -183.533)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-4">
+      <path id="Path_128699" data-name="Path 128699" d="M241.238,187.81l0,3.208a2.221,2.221,0,0,0,1.3,1.815l-.008-3.208A2.207,2.207,0,0,1,241.238,187.81Z" transform="translate(-241.238 -187.81)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-5">
+      <path id="Path_128705" data-name="Path 128705" d="M249.278,192.99l.01,3.206a6.947,6.947,0,0,0,6.319,0l-.008-3.206A6.965,6.965,0,0,1,249.278,192.99Z" transform="translate(-249.278 -192.99)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-6">
+      <path id="Path_128712" data-name="Path 128712" d="M269.329,138.784l4.8,2.789a2.67,2.67,0,0,0-2.689.262l-4.8-2.785A2.658,2.658,0,0,1,269.329,138.784Z" transform="translate(-266.64 -138.529)" fill="#4e4e4f"/>
+    </clipPath>
+    <clipPath id="clip-path-7">
+      <path id="Path_128715" data-name="Path 128715" d="M233.841,193.257l-4.8-2.789a2.649,2.649,0,0,1-1.1-2.423l4.8,2.791A2.634,2.634,0,0,0,233.841,193.257Z" transform="translate(-227.936 -188.045)" fill="#232324"/>
+    </clipPath>
+    <clipPath id="clip-path-8">
+      <path id="Path_128719" data-name="Path 128719" d="M232.667,169.421l-4.8-2.789a8.274,8.274,0,0,1,3.763-6.514l4.8,2.789A8.3,8.3,0,0,0,232.667,169.421Z" transform="translate(-227.87 -160.118)" fill="none"/>
+    </clipPath>
+    <clipPath id="clip-path-9">
+      <rect id="background-color-5" data-name="background-color" width="46" height="160" rx="8" fill="url(#linear-gradient-3)"/>
+    </clipPath>
+  </defs>
+  <rect id="background-color-6" data-name="background-color" width="354" height="209" rx="8" fill="#fff"/>
+  <rect id="background-color-7" data-name="background-color" width="354" height="209" rx="8" fill="url(#linear-gradient-4)"/>
+  <g id="Mask_Group_136" data-name="Mask Group 136" clip-path="url(#clip-path)">
+    <g id="bottom_bar_style" clip-path="url(#clip-path-2)">
+      <path id="background-color-8" data-name="background-color" d="M4,0H4A0,0,0,0,1,4,0V354a0,0,0,0,1,0,0H4a4,4,0,0,1-4-4V4A4,4,0,0,1,4,0Z" transform="translate(0 209) rotate(-90)" fill="#3e7eff" opacity="0.2"/>
+    </g>
+    <g id="Group_50146" data-name="Group 50146" transform="translate(-200.779 -7.798)">
+      <g id="Group_50142" data-name="Group 50142" transform="translate(227.87 135.316)">
+        <g id="Group_50118" data-name="Group 50118" transform="translate(0 0)">
+          <g id="Group_50117" data-name="Group 50117">
+            <g id="Group_50097" data-name="Group 50097" transform="translate(27.989 82.63)">
+              <g id="Group_50096" data-name="Group 50096" style="mix-blend-mode: normal;isolation: isolate">
+                <g id="Group_50086" data-name="Group 50086" transform="translate(54.26 11.605)" style="mix-blend-mode: normal;isolation: isolate">
+                  <g id="Group_50085" data-name="Group 50085" clip-path="url(#clip-path-3)">
+                    <g id="Group_50084" data-name="Group 50084" style="mix-blend-mode: normal;isolation: isolate">
+                      <path id="Path_128694" data-name="Path 128694" d="M267.15,185.38l.008,3.206a2.243,2.243,0,0,0,1.325-1.845l-.01-3.208a2.242,2.242,0,0,1-1.323,1.847Z" transform="translate(-267.15 -183.533)" fill="#999a9c"/>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group_50089" data-name="Group 50089" transform="translate(0.002 20.56)" style="mix-blend-mode: normal;isolation: isolate">
+                  <g id="Group_50088" data-name="Group 50088" clip-path="url(#clip-path-4)">
+                    <g id="Group_50087" data-name="Group 50087" style="mix-blend-mode: normal;isolation: isolate">
+                      <path id="Path_128696" data-name="Path 128696" d="M241.238,187.81l0,3.208a1.16,1.16,0,0,0,.038.293l-.015-3.2a1.6,1.6,0,0,1-.027-.3Z" transform="translate(-241.238 -187.81)" fill="#999a9c"/>
+                      <path id="Path_128697" data-name="Path 128697" d="M241.251,187.952l.015,3.2a2.092,2.092,0,0,0,.8,1.2l-.008-3.208a2.117,2.117,0,0,1-.8-1.2Z" transform="translate(-241.224 -187.655)" fill="#c0c0c3"/>
+                      <path id="Path_128698" data-name="Path 128698" d="M241.634,188.525l.008,3.208a3.512,3.512,0,0,0,.467.318l-.008-3.208a3.366,3.366,0,0,1-.467-.318Z" transform="translate(-240.805 -187.028)" fill="#e6e7ea"/>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group_50090" data-name="Group 50090" transform="translate(1.299 22.376)">
+                  <path id="Path_128700" data-name="Path 128700" d="M241.857,188.677l.008,3.209,15.541,9.028-.01-3.206Z" transform="translate(-241.857 -188.677)" fill="#d5d6d9"/>
+                </g>
+                <g id="Group_50091" data-name="Group 50091" transform="translate(23.159 13.45)">
+                  <path id="Path_128701" data-name="Path 128701" d="M252.3,202.37l.008,3.206,31.1-17.956-.008-3.206Z" transform="translate(-252.297 -184.415)" fill="#7f8082"/>
+                </g>
+                <g id="Group_50094" data-name="Group 50094" transform="translate(16.837 31.407)" style="mix-blend-mode: normal;isolation: isolate">
+                  <g id="Group_50093" data-name="Group 50093" clip-path="url(#clip-path-5)">
+                    <g id="Group_50092" data-name="Group 50092" style="mix-blend-mode: normal;isolation: isolate">
+                      <path id="Path_128702" data-name="Path 128702" d="M249.278,192.99l.01,3.206a5.69,5.69,0,0,0,1.922.66l-.008-3.206a5.762,5.762,0,0,1-1.924-.66Z" transform="translate(-249.278 -192.99)" fill="#e6e7ea"/>
+                      <path id="Path_128703" data-name="Path 128703" d="M250.2,193.3l.008,3.206a7.709,7.709,0,0,0,2.249.034l-.008-3.206a7.775,7.775,0,0,1-2.249-.034Z" transform="translate(-248.273 -192.645)" fill="#c0c0c3"/>
+                      <path id="Path_128704" data-name="Path 128704" d="M251.271,193.683l.008,3.206a5.87,5.87,0,0,0,2.148-.693l-.008-3.206a5.91,5.91,0,0,1-2.148.693Z" transform="translate(-247.098 -192.99)" fill="#999a9c"/>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group_50095" data-name="Group 50095">
+                  <path id="Path_128706" data-name="Path 128706" d="M242.558,196.709c-1.753,1.009-1.763,2.647-.023,3.658l15.539,9.031a6.965,6.965,0,0,0,6.322,0l31.1-17.955c1.755-1.013,1.763-2.653.025-3.662l-15.541-9.033a6.973,6.973,0,0,0-6.319,0Z" transform="translate(-241.237 -177.991)" fill="#edf1f4"/>
+                </g>
+              </g>
+            </g>
+            <g id="Group_50102" data-name="Group 50102" transform="translate(36.241 38.084)">
+              <g id="Group_50101" data-name="Group 50101" style="mix-blend-mode: normal;isolation: isolate">
+                <g id="Group_50098" data-name="Group 50098" transform="translate(0 12.773)">
+                  <path id="Path_128707" data-name="Path 128707" d="M251.86,216.214l-6.547-3.8-.135-49.6,6.542,5.913Z" transform="translate(-245.178 -162.817)" fill="#0f0f0f"/>
+                </g>
+                <g id="Group_50099" data-name="Group 50099">
+                  <path id="Path_128708" data-name="Path 128708" d="M251.719,175.4l-6.542-5.913L267.3,156.717l6.542,5.914Z" transform="translate(-245.178 -156.717)" fill="#0d2d49"/>
+                </g>
+                <g id="Group_50100" data-name="Group 50100" transform="translate(6.542 5.914)">
+                  <path id="Path_128709" data-name="Path 128709" d="M270.427,159.541l.135,47.486L248.443,219.8l-.141-47.484Z" transform="translate(-248.302 -159.541)" fill="#232324"/>
+                </g>
+              </g>
+            </g>
+            <g id="Group_50116" data-name="Group 50116">
+              <g id="Group_50115" data-name="Group 50115" style="mix-blend-mode: normal;isolation: isolate">
+                <g id="Group_50105" data-name="Group 50105" transform="translate(81.181)">
+                  <path id="Path_128710" data-name="Path 128710" d="M269.329,138.784l4.8,2.789a2.67,2.67,0,0,0-2.689.262l-4.8-2.785A2.658,2.658,0,0,1,269.329,138.784Z" transform="translate(-266.64 -138.529)" fill="#4e4e4f"/>
+                  <g id="Group_50104" data-name="Group 50104" clip-path="url(#clip-path-6)">
+                    <g id="Group_50103" data-name="Group 50103">
+                      <path id="Path_128711" data-name="Path 128711" d="M271.443,141.835l-4.8-2.785a2.658,2.658,0,0,1,2.689-.266l4.8,2.789a2.67,2.67,0,0,0-2.689.262Z" transform="translate(-266.64 -138.529)" fill="#232324"/>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group_50108" data-name="Group 50108" transform="translate(0.138 103.682)">
+                  <path id="Path_128713" data-name="Path 128713" d="M233.841,193.257l-4.8-2.789a2.649,2.649,0,0,1-1.1-2.423l4.8,2.791A2.634,2.634,0,0,0,233.841,193.257Z" transform="translate(-227.936 -188.045)" fill="#232324"/>
+                  <g id="Group_50107" data-name="Group 50107" clip-path="url(#clip-path-7)">
+                    <g id="Group_50106" data-name="Group 50106" style="mix-blend-mode: normal;isolation: isolate">
+                      <path id="Path_128714" data-name="Path 128714" d="M233.841,193.257l-4.8-2.789a2.649,2.649,0,0,1-1.1-2.423l4.8,2.791a2.634,2.634,0,0,0,1.1,2.421Z" transform="translate(-227.936 -188.045)" fill="#232324"/>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group_50109" data-name="Group 50109" transform="translate(0 51.72)">
+                  <path id="Path_128716" data-name="Path 128716" d="M232.811,217.983l-4.8-2.79-.139-51.963,4.8,2.79Z" transform="translate(-227.87 -163.229)" fill="#232324"/>
+                </g>
+                <g id="Group_50110" data-name="Group 50110" transform="translate(3.763 0.521)">
+                  <path id="Path_128717" data-name="Path 128717" d="M234.464,186.251l-4.8-2.788,77.418-44.685,4.8,2.786Z" transform="translate(-229.667 -138.778)" fill="#232324"/>
+                </g>
+                <g id="Group_50113" data-name="Group 50113" transform="translate(0 45.205)" style="mix-blend-mode: normal;isolation: isolate">
+                  <g id="Group_50112" data-name="Group 50112" clip-path="url(#clip-path-8)">
+                    <g id="Group_50111" data-name="Group 50111">
+                      <path id="Path_128718" data-name="Path 128718" d="M232.667,169.421l-4.8-2.789a8.274,8.274,0,0,1,3.763-6.514l4.8,2.789a8.3,8.3,0,0,0-3.763,6.514Z" transform="translate(-227.87 -160.118)" fill="#232324"/>
+                    </g>
+                  </g>
+                </g>
+                <g id="Group_50114" data-name="Group 50114" transform="translate(4.797 2.79)">
+                  <path id="Path_128720" data-name="Path 128720" d="M311.348,140.378c2.083-1.2,3.777-.237,3.782,2.159l.145,51.965a8.288,8.288,0,0,1-3.761,6.514L234.089,245.7c-2.083,1.2-3.782.239-3.786-2.157l-.142-51.965a8.3,8.3,0,0,1,3.763-6.514Z" transform="translate(-230.161 -139.862)" fill="#373738"/>
+                  <path id="Path_128721" data-name="Path 128721" d="M231.934,189.088a4.7,4.7,0,0,1,1.905-3.294l75.651-43.664.14,49.9a4.728,4.728,0,0,1-1.91,3.3l-75.653,43.664Z" transform="translate(-228.221 -137.38)" fill="#83cff2"/>
+                </g>
+              </g>
+            </g>
+          </g>
+        </g>
+        <g id="Group_50141" data-name="Group 50141" transform="translate(19.627 13.977)">
+          <g id="Group_50123" data-name="Group 50123">
+            <g id="Group_50122" data-name="Group 50122" style="mix-blend-mode: normal;isolation: isolate">
+              <g id="Group_50119" data-name="Group 50119" transform="translate(0 34.281)">
+                <path id="Path_128722" data-name="Path 128722" d="M238.875,205.089l-1.509-.863-.123-42.65,1.511.864Z" transform="translate(-237.243 -161.576)" fill="#822021"/>
+              </g>
+              <g id="Group_50120" data-name="Group 50120">
+                <path id="Path_128723" data-name="Path 128723" d="M238.754,180.349l-1.511-.864,59.38-34.281,1.509.865Z" transform="translate(-237.243 -145.204)" fill="#932425"/>
+              </g>
+              <path id="Path_128724" data-name="Path 128724" d="M255.511,153.406c1.663.077,2.282,1.273,1.384,2.674a5.756,5.756,0,0,1-4.632,2.393c-1.658-.077-2.28-1.273-1.38-2.674A5.76,5.76,0,0,1,255.511,153.406Z" transform="translate(-222.773 -136.236)" fill="#f93e3f"/>
+              <g id="Group_50121" data-name="Group 50121" transform="translate(1.511 0.865)">
+                <path id="Path_128725" data-name="Path 128725" d="M237.965,171.553l.121,42.649,31.587-18.237v-42.72Z" transform="translate(-237.965 -137.273)" fill="#f93e3f"/>
+                <path id="Path_128726" data-name="Path 128726" d="M280.778,145.617l-27.671,15.972v42.72L280.9,188.265Z" transform="translate(-221.4 -145.617)" fill="#f93e3f"/>
+              </g>
+            </g>
+          </g>
+          <g id="Group_50124" data-name="Group 50124" transform="translate(33.207 3.256)">
+            <path id="Path_128727" data-name="Path 128727" d="M279.3,146.759l.109,38.547s-3.666,15.493-25.533,16.249l-.773-36.038.475-3.2C264.288,158.33,279.3,146.759,279.3,146.759Z" transform="translate(-253.102 -146.759)" fill="#babbbd"/>
+          </g>
+          <g id="Group_50127" data-name="Group 50127" transform="translate(30.677 20.546)">
+            <g id="Group_50126" data-name="Group 50126" style="mix-blend-mode: normal;isolation: isolate">
+              <g id="Group_50125" data-name="Group 50125">
+                <path id="Path_128728" data-name="Path 128728" d="M254.548,195.039,252,193.562l-.1-35.608V156.9l-.01-1.88h0l2.529,1.467h0l.016.008h0Z" transform="translate(-251.894 -155.016)" fill="#717274"/>
+              </g>
+            </g>
+          </g>
+          <g id="Group_50128" data-name="Group 50128" transform="translate(3.838 19.796)">
+            <path id="Path_128729" data-name="Path 128729" d="M263.671,156.7l4.789-2.046.109,37.954s-9.3,16.075-29.374,16.833l-.119-38.547C263.012,161.273,263.671,156.7,263.671,156.7Z" transform="translate(-239.076 -154.658)" fill="#babbbd"/>
+          </g>
+          <g id="Group_50131" data-name="Group 50131" transform="translate(3.846 36.036)">
+            <g id="Group_50130" data-name="Group 50130" style="mix-blend-mode: normal;isolation: isolate">
+              <g id="Group_50129" data-name="Group 50129">
+                <path id="Path_128730" data-name="Path 128730" d="M241.73,202.44l-2.54-1.478-.11-38.547,2.542,1.477Z" transform="translate(-239.08 -162.414)" fill="#717274"/>
+              </g>
+            </g>
+          </g>
+          <g id="Group_50132" data-name="Group 50132" transform="translate(33.222 6.48)">
+            <path id="Path_128731" data-name="Path 128731" d="M279.3,148.3l.1,39s-4.045,14.58-26.182,15.087l-.109-38.545C270.407,157.885,279.3,148.3,279.3,148.3Z" transform="translate(-253.109 -148.299)" fill="#f2f2f2"/>
+          </g>
+          <g id="Group_50133" data-name="Group 50133" transform="translate(33.222 13.07)">
+            <path id="Path_128732" data-name="Path 128732" d="M281.628,151.446l.5,40.911s-8.215,9.393-28.921,6.587l-.1-38.545C272.434,158.921,281.628,151.446,281.628,151.446Z" transform="translate(-253.109 -151.446)" fill="#fff"/>
+          </g>
+          <g id="Group_50135" data-name="Group 50135" transform="translate(34.428 19.815)">
+            <g id="Group_50134" data-name="Group 50134">
+              <path id="Path_128733" data-name="Path 128733" d="M278.9,167.951a22.64,22.64,0,0,1-3.627,2.18c-.436.209-.892.419-1.384.624a34.713,34.713,0,0,1-7.932,2.2l-.314.048a49.718,49.718,0,0,1-11.958.293v2.458a59.435,59.435,0,0,0,6.43.186,50.145,50.145,0,0,0,5.917-.517,35.821,35.821,0,0,0,8.654-2.349,27.881,27.881,0,0,0,4.213-2.268Z" transform="translate(-253.685 -140.135)" fill="#e6e6e6"/>
+              <path id="Path_128734" data-name="Path 128734" d="M278.9,164.586a24.381,24.381,0,0,1-4.02,2.4c-.429.205-.886.406-1.367.607a37.265,37.265,0,0,1-7.817,2.232l-.312.052a52.057,52.057,0,0,1-11.7.6v2.444a62.727,62.727,0,0,0,6.405-.01,55.037,55.037,0,0,0,5.88-.662,36.86,36.86,0,0,0,8-2.209,35.551,35.551,0,0,0,4.688-2.494c.084-.046.157-.092.239-.138Z" transform="translate(-253.685 -143.816)" fill="#e6e6e6"/>
+              <path id="Path_128735" data-name="Path 128735" d="M278.9,161.227a27.522,27.522,0,0,1-4.431,2.6c-.431.2-.882.4-1.357.591a40.4,40.4,0,0,1-7.7,2.266c-.1.019-.2.04-.3.057a55.341,55.341,0,0,1-11.424.9v2.439q3.333.041,6.359-.214c2.06-.178,4.012-.463,5.838-.8a32.379,32.379,0,0,0,11.713-4.276c.475-.253.907-.5,1.3-.725Z" transform="translate(-253.685 -147.491)" fill="#e6e6e6"/>
+              <path id="Path_128736" data-name="Path 128736" d="M278.9,157.907a34.457,34.457,0,0,1-4.847,2.741c-.423.195-.867.383-1.338.576a44.868,44.868,0,0,1-7.59,2.295l-.3.063a59.692,59.692,0,0,1-11.14,1.2v2.439c2.217-.046,4.328-.191,6.315-.412,2.06-.241,3.993-.572,5.8-.944a35.4,35.4,0,0,0,10.74-3.846c.9-.456,1.686-.882,2.364-1.263Z" transform="translate(-253.685 -151.123)" fill="#e6e6e6"/>
+              <path id="Path_128737" data-name="Path 128737" d="M278.9,154.667a1.993,1.993,0,0,0-.184.107,40.758,40.758,0,0,1-5.044,2.714c-.421.186-.861.371-1.319.557a50.466,50.466,0,0,1-7.482,2.328c-.094.023-.191.046-.289.067a65.188,65.188,0,0,1-10.9,1.489v2.45c2.23-.124,4.332-.337,6.307-.618,2.063-.3,3.981-.674,5.75-1.083a48.456,48.456,0,0,0,6.062-1.8c1.459-.553,2.682-1.143,3.7-1.625,1.346-.634,2.479-1.231,3.394-1.751Z" transform="translate(-253.685 -154.667)" fill="#e6e6e6"/>
+            </g>
+          </g>
+          <path id="Path_128738" data-name="Path 128738" d="M256.264,157.019v0c-.08.054-.165.109-.255.161a2.939,2.939,0,0,1-.281.147l0,0c-.04.019-.082.04-.128.059h0a5.8,5.8,0,0,1-2.521.413,5.215,5.215,0,0,1-2.253-.584l2.245-1.3h0l3-1.734C257.368,154.975,257.432,156.19,256.264,157.019Z" transform="translate(-222.389 -135.376)" fill="#4e4e4f"/>
+          <g id="Group_50137" data-name="Group 50137" transform="translate(6.388 22.021)">
+            <g id="Group_50136" data-name="Group 50136">
+              <path id="Path_128739" data-name="Path 128739" d="M267.128,155.721l.109,38.547S262.268,209,240.4,209.761l-.109-38.547C261.329,164.677,267.128,155.721,267.128,155.721Z" transform="translate(-240.294 -155.721)" fill="#d4d4d4"/>
+            </g>
+          </g>
+          <g id="Group_50138" data-name="Group 50138" transform="translate(7.778 22.021)">
+            <path id="Path_128740" data-name="Path 128740" d="M266.405,155.721l.1,38.547s-4.816,15.711-25.552,16.467V171.6C260.907,165.066,266.405,155.721,266.405,155.721Z" transform="translate(-240.958 -155.721)" fill="#f7f7f7"/>
+          </g>
+          <g id="Group_50140" data-name="Group 50140" transform="translate(10.341 28.062)">
+            <g id="Group_50139" data-name="Group 50139">
+              <path id="Path_128741" data-name="Path 128741" d="M263.929,170.986a21.64,21.64,0,0,1-4,6.114c-.3.335-.622.67-.961,1.009a26.481,26.481,0,0,1-6.278,4.625c-.739.394-1.512.758-2.305,1.1a33.88,33.88,0,0,1-8.2,2.238v2.33a35.994,35.994,0,0,0,10.652-3.116,28.889,28.889,0,0,0,8.1-5.756,26.964,26.964,0,0,0,3-3.637Z" transform="translate(-242.182 -145.063)" fill="#cfcfcf"/>
+              <path id="Path_128742" data-name="Path 128742" d="M263.929,167.877a21.876,21.876,0,0,1-4.24,5.974q-.465.484-.986.978a28.946,28.946,0,0,1-6.324,4.521c-.737.392-1.5.762-2.295,1.108a38.149,38.149,0,0,1-7.9,2.4v2.314a40.328,40.328,0,0,0,10.637-3.411,31.273,31.273,0,0,0,8.015-5.628,27.974,27.974,0,0,0,3.095-3.572Z" transform="translate(-242.182 -148.464)" fill="#cfcfcf"/>
+              <path id="Path_128743" data-name="Path 128743" d="M263.929,164.781a22.144,22.144,0,0,1-4.462,5.8q-.477.465-1.011.942a32.329,32.329,0,0,1-6.374,4.422q-1.09.584-2.28,1.118a43.687,43.687,0,0,1-7.62,2.536v2.322a45.674,45.674,0,0,0,10.629-3.717,34.274,34.274,0,0,0,7.94-5.5,29.175,29.175,0,0,0,3.179-3.486Z" transform="translate(-242.182 -151.851)" fill="#cfcfcf"/>
+              <path id="Path_128744" data-name="Path 128744" d="M263.929,161.693a22.868,22.868,0,0,1-4.669,5.6c-.331.3-.674.6-1.039.911a36.512,36.512,0,0,1-6.424,4.32c-.72.387-1.478.762-2.266,1.127a50.848,50.848,0,0,1-7.35,2.666v2.358a52.439,52.439,0,0,0,10.633-4.039,38.147,38.147,0,0,0,7.869-5.371,30.53,30.53,0,0,0,3.246-3.375Z" transform="translate(-242.182 -155.229)" fill="#cfcfcf"/>
+              <path id="Path_128745" data-name="Path 128745" d="M263.929,158.606a23.508,23.508,0,0,1-4.875,5.386c-.331.289-.687.58-1.057.877a42.681,42.681,0,0,1-6.472,4.219c-.716.383-1.47.764-2.255,1.137a60.791,60.791,0,0,1-7.088,2.785v2.425a61.821,61.821,0,0,0,10.65-4.38,43.442,43.442,0,0,0,7.789-5.243,31.919,31.919,0,0,0,3.308-3.254Z" transform="translate(-242.182 -158.606)" fill="#cfcfcf"/>
+            </g>
+          </g>
+        </g>
+      </g>
+    </g>
+  </g>
+  <g id="bg-2" data-name="bg" clip-path="url(#clip-path-9)">
+    <g id="dot" transform="translate(-1.048 -21)">
+      <g id="dot_copy" data-name="dot copy" transform="translate(12.905 156) rotate(90)" opacity="0.12">
+        <ellipse id="Oval" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_7" data-name="Oval Copy 7" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_8" data-name="Oval Copy 8" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_9" data-name="Oval Copy 9" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_35" data-name="Oval Copy 35" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_13" data-name="Oval Copy 13" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_12" data-name="Oval Copy 12" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_11" data-name="Oval Copy 11" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_10" data-name="Oval Copy 10" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_17" data-name="Oval Copy 17" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_16" data-name="Oval Copy 16" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_15" data-name="Oval Copy 15" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_14" data-name="Oval Copy 14" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_21" data-name="Oval Copy 21" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_20" data-name="Oval Copy 20" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_19" data-name="Oval Copy 19" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_18" data-name="Oval Copy 18" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_25" data-name="Oval Copy 25" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_24" data-name="Oval Copy 24" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_23" data-name="Oval Copy 23" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_22" data-name="Oval Copy 22" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_29" data-name="Oval Copy 29" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_28" data-name="Oval Copy 28" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_27" data-name="Oval Copy 27" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_26" data-name="Oval Copy 26" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_34" data-name="Oval Copy 34" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_33" data-name="Oval Copy 33" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_32" data-name="Oval Copy 32" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_31" data-name="Oval Copy 31" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_30" data-name="Oval Copy 30" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 12.147)" fill="#fff"/>
+      </g>
+      <g id="dot_copy-2" data-name="dot copy" transform="translate(50.191 0) rotate(90)" opacity="0.12">
+        <ellipse id="Oval-2" data-name="Oval" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_7-2" data-name="Oval Copy 7" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_8-2" data-name="Oval Copy 8" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_9-2" data-name="Oval Copy 9" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_35-2" data-name="Oval Copy 35" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_13-2" data-name="Oval Copy 13" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_12-2" data-name="Oval Copy 12" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_11-2" data-name="Oval Copy 11" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_10-2" data-name="Oval Copy 10" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_17-2" data-name="Oval Copy 17" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_16-2" data-name="Oval Copy 16" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_15-2" data-name="Oval Copy 15" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_14-2" data-name="Oval Copy 14" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_21-2" data-name="Oval Copy 21" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_20-2" data-name="Oval Copy 20" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_19-2" data-name="Oval Copy 19" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_18-2" data-name="Oval Copy 18" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_25-2" data-name="Oval Copy 25" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_24-2" data-name="Oval Copy 24" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_23-2" data-name="Oval Copy 23" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_22-2" data-name="Oval Copy 22" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_29-2" data-name="Oval Copy 29" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_28-2" data-name="Oval Copy 28" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_27-2" data-name="Oval Copy 27" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_26-2" data-name="Oval Copy 26" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_34-2" data-name="Oval Copy 34" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_33-2" data-name="Oval Copy 33" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_32-2" data-name="Oval Copy 32" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_31-2" data-name="Oval Copy 31" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_30-2" data-name="Oval Copy 30" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 12.147)" fill="#fff"/>
+      </g>
+      <g id="dot_copy-3" data-name="dot copy" transform="translate(50.191 45) rotate(90)" opacity="0.12">
+        <ellipse id="Oval-3" data-name="Oval" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_7-3" data-name="Oval Copy 7" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_8-3" data-name="Oval Copy 8" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_9-3" data-name="Oval Copy 9" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_35-3" data-name="Oval Copy 35" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 0)" fill="#fff"/>
+        <ellipse id="Oval_Copy_13-3" data-name="Oval Copy 13" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_12-3" data-name="Oval Copy 12" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_11-3" data-name="Oval Copy 11" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_10-3" data-name="Oval Copy 10" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_17-3" data-name="Oval Copy 17" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_16-3" data-name="Oval Copy 16" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_15-3" data-name="Oval Copy 15" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_14-3" data-name="Oval Copy 14" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_21-3" data-name="Oval Copy 21" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_20-3" data-name="Oval Copy 20" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_19-3" data-name="Oval Copy 19" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_18-3" data-name="Oval Copy 18" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_25-3" data-name="Oval Copy 25" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_24-3" data-name="Oval Copy 24" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_23-3" data-name="Oval Copy 23" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_22-3" data-name="Oval Copy 22" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_29-3" data-name="Oval Copy 29" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(0 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_28-3" data-name="Oval Copy 28" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(9.147 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_27-3" data-name="Oval Copy 27" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(18.294 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_26-3" data-name="Oval Copy 26" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(27.441 12.147)" fill="#fff"/>
+        <ellipse id="Oval_Copy_34-3" data-name="Oval Copy 34" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 2.429)" fill="#fff"/>
+        <ellipse id="Oval_Copy_33-3" data-name="Oval Copy 33" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 4.859)" fill="#fff"/>
+        <ellipse id="Oval_Copy_32-3" data-name="Oval Copy 32" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 7.288)" fill="#fff"/>
+        <ellipse id="Oval_Copy_31-3" data-name="Oval Copy 31" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 9.717)" fill="#fff"/>
+        <ellipse id="Oval_Copy_30-3" data-name="Oval Copy 30" cx="0.381" cy="0.379" rx="0.381" ry="0.379" transform="translate(36.588 12.147)" fill="#fff"/>
+      </g>
+    </g>
+  </g>
+</svg>

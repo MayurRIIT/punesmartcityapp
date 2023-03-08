@@ -1,0 +1,68 @@
+<div class="b">
+    <div class="h" style="height:200px;" layout="column" layout-align="start center">
+        <img style="height:75%; padding-top: 30px;" src="assets/images/smartcitylogo.jpg">
+    </div>
+    <div class="h" style="height:calc(100% - 200px)">
+        <div class="h" (click)="moduleClick('home')" style="height:65px;" layout="column" layout-align="start center">
+            <div class="h pt"  [ngStyle]="{'background-color': (moduleselected == 'home' && !IsAccessBlocked ? '#edf2f6' : (IsAccessBlocked ? 'gray' : 'white')) }"  style="height:50px;padding-left: 10px;" layout="row" layout-align="start center">
+                    <div class="v" style="width:60px;" layout="row" layout-align="center center">
+                        <img style="height:60%;" src="{{ moduleselected == 'home' ? 'assets/images/home.svg' : 'assets/images/home_not_selected.svg' }}">
+                    </div>
+                    <div class="v" style="width:calc(100% - 60px)" layout="row" layout-align="start center">
+                        <h5 class="px16 lw">{{ 'home.revision' | translate }}</h5>
+                    </div>
+            </div>
+        </div>
+        <!-- <div class="h" (click)="moduleClick('search')" style="height:65px;" layout="column" layout-align="start center">
+            <div class="h pt" [ngStyle]="{'background-color': moduleselected == 'search' ? '#edf2f6' : 'white' }"  style="height:50px;padding-left: 10px;" layout="row" layout-align="start center">
+                    <div class="v" style="width:60px;" layout="row" layout-align="center center">
+                        <img style="height:60%;" src="{{ moduleselected == 'search' ? 'assets/images/search_selected.svg' : 'assets/images/search.svg' }}">
+                    </div>
+                    <div class="v" style="width:calc(100% - 60px)" layout="row" layout-align="start center">
+                        <h5 class="px16 lw">{{ 'home.search' | translate }}</h5>
+                    </div>
+            </div>
+        </div> -->
+        <div class="h pt" (click)="moduleClick('explore')" style="height:65px;" layout="column" layout-align="start center">
+            <div class="h" [ngStyle]="{'background-color': moduleselected == 'explore' ? '#edf2f6' : 'white' }"  style="height:50px;padding-left: 10px;" layout="row" layout-align="start center">
+                    <div class="v" style="width:60px;" layout="row" layout-align="center center">
+                        <img style="height:60%;" src="{{ moduleselected == 'explore' ? 'assets/images/explore_selected.svg' : 'assets/images/explore.svg' }}">
+                    </div>
+                    <div class="v" style="width:calc(100% - 60px)" layout="row" layout-align="start center">
+                        <h5 class="px16 lw">{{ 'home.upgrade' | translate }}</h5>
+                    </div>
+            </div>
+        </div>
+        <div class="h pt" (click)="moduleClick('casestudy')" style="height:65px;" layout="column" layout-align="start center">
+            <div class="h" [ngStyle]="{'background-color': moduleselected == 'casestudy' ? '#edf2f6' : 'white' }"  style="height:50px;padding-left: 10px;" layout="row" layout-align="start center">
+                    <div class="v" style="width:60px;" layout="row" layout-align="center center">
+                        <img style="height:60%;" src="{{ moduleselected == 'casestudy' ? 'assets/images/explore_selected.svg' : 'assets/images/explore.svg' }}">
+                    </div>
+                    <div class="v" style="width:calc(100% - 60px)" layout="row" layout-align="start center">
+                        <h5 class="px16 lw">{{ 'home.casestudy' | translate }}</h5>
+                    </div>
+            </div>
+        </div>
+        <div class="h pt" (click)="moduleClick('profile')" style="height:65px;" layout="column" layout-align="start center">
+            <div class="h" [ngStyle]="{'background-color': moduleselected == 'profile' ? '#edf2f6' : 'white' }"  style="height:50px;padding-left: 10px;" layout="row" layout-align="start center">
+                    <div class="v" style="width:60px;" layout="row" layout-align="center center">
+                        <img style="height:60%;" src="{{ moduleselected == 'profile' ? 'assets/images/profile_selected.svg' : 'assets/images/profile.svg' }}">
+                    </div>
+                    <div class="v" style="width:calc(100% - 60px)" layout="row" layout-align="start center">
+                        <h5 class="px16 lw">{{ 'home.profile' | translate }}</h5>
+                    </div>
+            </div>
+        </div>
+        <div class="h pt" (click)="moduleClick('logout')" style="height:65px;" layout="column" layout-align="start center">
+            <div class="h" [ngStyle]="{'background-color': moduleselected == 'logout' ? '#edf2f6' : 'white' }"  style="height:50px;padding-left: 10px;" layout="row" layout-align="start center">
+                    <div class="v" style="width:60px;" layout="row" layout-align="center center">
+                        <img style="height:60%;" src="assets/images/logout.svg">
+                    </div>
+                    <div class="v" style="width:calc(100% - 60px)" layout="row" layout-align="start center">
+                        <h5 class="px16 lw">{{ 'profile.logout' | translate }}</h5>
+                    </div>
+            </div>
+        </div>
+
+    </div>
+</div>

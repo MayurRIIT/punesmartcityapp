@@ -1,0 +1,25 @@
+<div class="b" style="overflow-x:hidden;overflow-y: auto;">
+    <img src="assets/images/group1.svg" style="width: 100%; height: 315px; position: absolute; left:30%; opacity: 0.4;">
+    <div class="h" style="height:170px;" layout="row" layout-align="start center">
+        <div class="v" style="padding:0px 30px;" layout="row" layout-align="start center">
+            <div class="vh" (click)="backSelectSubject()" style="width:80px;height:80px;border-radius:50%;background:#cedcf5"></div>
+            <div class="v" style="width:calc(100% - 80px);padding: 0px 25px;" layout="column" layout-align="center center">
+              <div class="h" layout="row" layout-align="start center">
+                <h5 class="px40 hw" style="font-family: PoppinsSemiBold;">{{ 'home.upgrade' | translate }}</h5>
+              </div>
+            </div>
+        </div>
+    </div>    
+    <div class="h" style="height:calc( 100% - 170px);overflow:auto;">
+      <div class="vh" style="height: 150px;padding: 15px;width: 200px;" (click)="loadAudio(data)" *ngFor="let data of dataArr;let i = index;">
+        <div class="b" layout="column" layout-align="center center">
+            <div class="h" style="margin-bottom: 15px;" layout="row" layout-align="center center">
+              <img src="{{data.thumbnail}}">
+            </div>
+            <div class="h" layout="row" layout-align="center center">
+              <h5 class="px16 lw">{{data.name}}</h5>
+            </div>
+        </div>
+      </div>
+    </div>
+  </div>
