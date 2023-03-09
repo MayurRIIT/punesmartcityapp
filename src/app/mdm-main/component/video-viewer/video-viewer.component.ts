@@ -36,7 +36,7 @@ export class VideoViewerComponent implements OnInit {
     this.activeRoute.queryParams
     .subscribe((params : any) => {
       console.log(params);
-      this.videoUrl = 'assets/videos/'+params.videoId;
+      this.videoUrl = 'http://edutab.in/'+params.videoId;
     });
   }
 

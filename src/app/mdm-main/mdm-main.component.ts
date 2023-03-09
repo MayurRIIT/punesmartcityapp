@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
 import { TranslateService } from '@ngx-translate/core';
-import { LanguageService } from '..//language.service';
+import { LanguageService } from '../language.service';
 import { Constants } from '../core/_services/constants.enum';
 import { ShareableService } from '../core/_services/shareable.service';
 import { StorageService } from '../core/_services/storage.service';
