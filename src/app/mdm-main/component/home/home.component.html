@@ -24,8 +24,8 @@
           <div class="vh" style="height: 150px;padding: 15px;width: 200px;" (click)="onSubjectClick(subject)" *ngFor="let subject of subjects;let i = index;" [ngStyle]="{ 'background-color' : subject.colorCode }">
               <div class="b" layout="column" layout-align="center center">
                   <div class="h" style="margin-bottom: 15px;" layout="row" layout-align="center center">
-                    <!-- <img src="{{subject.thumbnail}}"> -->
-                    <p class="circular-p">{{subject.altername}}</p>
+                    <img style="max-width:25%" src="{{subject.thumbnail}}">
+                    <!-- <p class="circular-p">{{subject.altername}}</p> -->
                   </div>
                   <div class="h" style="" layout="row" layout-align="center center">
                     <h5 class="px16 lw">{{subject.name}}</h5>
@@ -34,7 +34,7 @@
           </div>
       </div>
     </div>
-    <div *ngIf="watchedHistory.length > 0"  class="h" style="height:200px;padding: 0px 30px;">
+    <!-- <div *ngIf="watchedHistory.length > 0"  class="h" style="height:200px;padding: 0px 30px;">
       <div class="h" style="height:70px;" layout="row" layout-align="start center">
         <h5 class="px18" style="font-family: PoppinsThin; text-align: center;">{{ 'common.continue_reading' | translate }}</h5>
       </div>
@@ -51,7 +51,7 @@
               </div>
           </div>
       </div>
-    </div>
+    </div> -->
     <!-- <div class="h" style="height:300px;padding: 0px 30px;" layout="row" layout-align="center center">
       <div class="h" style="height:200px;">
         <div class="v" (click)="openDrawer('swadhyay')" style="width:33.33%;padding:0px 20px;">

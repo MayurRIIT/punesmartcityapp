@@ -40,9 +40,9 @@ export class MdmMainComponent implements OnInit {
         if(data == "OPEN"){
           this.openDrawer();
 
-          this.name = this.localStorageAPI.retrieve(Constants.FIRST_NAME);// + " " + resp.result.lastName;
+          this.name = this.localStorageAPI.retrieve(Constants.FIRST_NAME) + " " + this.localStorageAPI.retrieve(Constants.LAST_NAME);
           this.profilePic = this.localStorageAPI.retrieve(Constants.PHOTO);
-          this.ClassGrade = this.localStorageAPI.retrieve(Constants.GRADEID);
+          this.ClassGrade = this.localStorageAPI.retrieve(Constants.GRADEORDER);
 
         }
   

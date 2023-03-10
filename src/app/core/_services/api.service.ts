@@ -11,8 +11,8 @@ export class APIService {
   constructor(private restService: RestService) { }
 
   //Login API 
- // login = (login : Login) => this.restService.post('/login', login);
-   login = (login : Login) => this.restService.get('login.php?mobile='+login.mobileNumber);
+  login = (login : Login) => this.restService.post('/login', login);
+  // login = (login : Login) => this.restService.get('login.php?mobile='+login.mobileNumber);
 
 
 
@@ -43,24 +43,24 @@ export class APIService {
   //Verify OTP
   verifyOTP = (otpReq : any) => this.restService.post('/verify-otp', otpReq);
 
-  getSubjectList() {
-    return this.restService.get(`getSubject.php?mobile=${localStorage.getItem(Constants.MOBILE)}&bd=${localStorage.getItem(Constants.BOARD)}&medium=${localStorage.getItem(Constants.MEDIUMNAME)}&standard=${localStorage.getItem(Constants.GRADEID)}`);
-  };
-  getChapterList(subject_id : string,contentType : any) {
-    return this.restService.get(`getChapter.php?mobile=${localStorage.getItem(Constants.MOBILE)}&bd=${localStorage.getItem(Constants.BOARD)}&medium=${localStorage.getItem(Constants.MEDIUMNAME)}&standard=${localStorage.getItem(Constants.GRADEID)}&subject=${subject_id}`);
-  };
+  // getSubjectList() {
+  //   return this.restService.get(`getSubject.php?mobile=${localStorage.getItem(Constants.MOBILE)}&bd=${localStorage.getItem(Constants.BOARD)}&medium=${localStorage.getItem(Constants.MEDIUMNAME)}&standard=${localStorage.getItem(Constants.GRADEID)}`);
+  // };
+  // getChapterList(subject_id : string,contentType : any) {
+  //   return this.restService.get(`getChapter.php?mobile=${localStorage.getItem(Constants.MOBILE)}&bd=${localStorage.getItem(Constants.BOARD)}&medium=${localStorage.getItem(Constants.MEDIUMNAME)}&standard=${localStorage.getItem(Constants.GRADEID)}&subject=${subject_id}`);
+  // };
 
-  getChapterVideoList(subject_id : string,chapter_Id : string,contentType  : any) {
-    return this.restService.get(`getVideos.php?mobile=${localStorage.getItem(Constants.MOBILE)}&bd=${localStorage.getItem(Constants.BOARD)}&medium=${localStorage.getItem(Constants.MEDIUMNAME)}&standard=${localStorage.getItem(Constants.GRADEID)}&subject=${subject_id}&chapter=${chapter_Id}`);
-  };
+  // getChapterVideoList(subject_id : string,chapter_Id : string,contentType  : any) {
+  //   return this.restService.get(`getVideos.php?mobile=${localStorage.getItem(Constants.MOBILE)}&bd=${localStorage.getItem(Constants.BOARD)}&medium=${localStorage.getItem(Constants.MEDIUMNAME)}&standard=${localStorage.getItem(Constants.GRADEID)}&subject=${subject_id}&chapter=${chapter_Id}`);
+  // };
 
   //Subject 
-  //getSubjectList = () => this.restService.get("/subject");
+  getSubjectList = () => this.restService.get("/subject");
 
   myProfile = () => this.restService.get("/myProfile");
 
   // Get All Chapter List
-  //getChapterList = (subject_id : any,contentType : any) => this.restService.get(`/chapter?subjectId=${subject_id}&contentType=${contentType}`);
+  getChapterList = (subject_id : any,contentType : any) => this.restService.get(`/chapter?subjectId=${subject_id}&contentType=${contentType}`);
 
   getVideoListByChapterId = (chapterId : any,contentType : any) => this.restService.get(`/getVideoListByChapterId?chapterId=${chapterId}&contentType=${contentType}`);
 

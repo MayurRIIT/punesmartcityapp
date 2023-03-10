@@ -362,7 +362,7 @@ export class HomeComponent implements OnInit {
     return initials;
   };
 
-  getSubjectList() {
+  getSubjectList1() {
 
     let colorCodes = ['#FEA1BF','#D3756B','#E3ACF9','#4E6C50','#FFD56F','#FFD495','#FFBABA','#F2DEBA','#D09CFA','#BAD7E9','#FFCAC8','#F9B5D0','#FFDB89'];
     this.service.getSubjectList().subscribe((resp) => {
@@ -378,38 +378,42 @@ export class HomeComponent implements OnInit {
     });
   }
 
-  // getSubjectList() {
+  getSubjectList() {
 
-  //   this.service.getSubjectList().subscribe((resp) => {
-  //     console.log('==getSubjectList=========>', resp)
+    let colorCodes = ['#FEA1BF','#D3756B','#E3ACF9','#4E6C50','#FFD56F','#FFD495','#FFBABA','#F2DEBA','#D09CFA','#BAD7E9','#FFCAC8','#F9B5D0','#FFDB89'];
 
-  //     if (resp.responseCode == 200) {
-  //       if(resp.result && resp.result.length > 0){
-  //         resp.result.sort(function(a: any, b: any){
-  //           return Number(a.subjectCode)-Number(b.subjectCode);
-  //         })
+    this.service.getSubjectList().subscribe((resp) => {
+      console.log('==getSubjectList=========>', resp)
+
+      if (resp.responseCode == 200) {
+        if(resp.result && resp.result.length > 0){
+          resp.result.sort(function(a: any, b: any){
+            return Number(a.subjectCode)-Number(b.subjectCode);
+          })
          
          
-  //         this.subjects = resp.result;
-  //         console.log(this.subjects.length);
-  //         // let subjectId = [];
-  //         for(let i = 0 ; i < this.subjects.length ; i++){
-  //           this.subjects[i].altername = this.subjects[i].name.split("and").join("\nand\n");
-  //           //subjectId.push(this.subjects[i]._id);
-  //         }
+          this.subjects = resp.result;
+          console.log(this.subjects.length);
+          // let subjectId = [];
+          for(let i = 0 ; i < this.subjects.length ; i++){
+            this.subjects[i].altername = this.subjects[i].name.split("and").join("\nand\n");
+            //subjectId.push(this.subjects[i]._id);
+            this.subjects[i].colorCode = colorCodes[i];
+
+          }
          
-  //         this.getWatchedHistory();
-  //         console.log('==this.subjects=========>', this.subjects)
-  //       }       
-  //     }
-  //   });
-  // }
+          //this.getWatchedHistory();
+          console.log('==this.subjects=========>', this.subjects)
+        }       
+      }
+    });
+  }
 
   onSubjectClick(subject : any) {
     console.log('==onSubjectClick subject=========>', subject)
-    this.localStorageAPI.store(Constants.SUBJECT_ID, subject.folLink);
+    this.localStorageAPI.store(Constants.SUBJECT_ID, subject._id);
     this.timerStart = false;
-    this.router.navigate(['/mdm-home/subject-chapter'], { queryParams: { subjectLang: subject.lang, subjectId: subject.folLink, subjectName: subject.name } });
+    this.router.navigate(['/mdm-home/subject-chapter'], { queryParams: { subjectLang: subject.lang, subjectId: subject._id, subjectName: subject.name } });
   }
 
 

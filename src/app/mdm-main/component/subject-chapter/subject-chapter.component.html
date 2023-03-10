@@ -11,13 +11,13 @@
                 <h5 class="px16" style="font-family: PoppinsThin; text-align: center;">{{ 'home.class' | translate }}: {{gradeName}}</h5>
                 <h5 class="px16 lp" style="font-family: PoppinsThin;text-align: center;">{{chapters.length}} {{ (chapters.length == 1 ? 'home.chapter' : 'home.chapters') | translate }}</h5>
                 <!-- <h5 class="px16 lp" style="font-family: PoppinsThin;text-align: center;">{{videoCount}} {{ 'home.videos' | translate }}</h5> -->
-                <button style="background-color: #03a9f4; padding: 4px 10px;border: 0;color: white;margin-left: 10px;font-weight: 600;" (click)="viewPdf()">View Pdf</button>
+                <!-- <button style="background-color: #03a9f4; padding: 4px 10px;border: 0;color: white;margin-left: 10px;font-weight: 600;" (click)="viewPdf()">View Pdf</button> -->
               </div>
             </div>
         </div>
     </div>    
     <div class="h" style="height:calc( 100% - 170px);overflow:auto;">
-      <div *ngIf="watchedHistory.length > 0" class="h" style="height:200px;padding: 0px 30px;">
+      <!-- <div *ngIf="watchedHistory.length > 0" class="h" style="height:200px;padding: 0px 30px;">
         <div class="h" style="height:70px;" layout="row" layout-align="start center">
           <h5 class="px18" style="font-family: PoppinsThin; text-align: center;">{{ 'common.continue_reading' | translate }}</h5>
         </div>
@@ -34,12 +34,12 @@
                 </div>
             </div>
         </div>
-      </div>
+      </div> -->
       <div class="h">
         <div class="h" *ngFor="let chapterItem of chapters" style="height:100px;padding: 0px 30px;margin-bottom:30px;">
             <div class="h" style="height:70px;" layout="row" layout-align="start center">
               <div class="v" style="width:calc(100% - 200px);" layout="row" layout-align="start center">
-                <h5 class="px18 lw" style="text-align: center;" [ngStyle]="{'font-family': subjectLang == 'Mar' ? 'KrutiDevBold' : 'PoppinsSemiBold'}" >{{chapterItem?.name}}</h5>
+                <h5 class="px18 lw" style="text-align: center;" >{{chapterItem?.chapterNumber}}. {{chapterItem?.title}}</h5>
               </div>  
               <!-- <div class="v" style="width:200px;" layout="row" layout-align="start center">
                 <div class="vh brdRad pt" layout="row" layout-align="center center"  (click)="gotoQuestionList(chapterItem?._id)" style="width:185px;height:35px;background:#3378f09c">
@@ -47,25 +47,25 @@
                 </div>
               </div> -->
             </div>
-            <div class="v" style="height:calc(100% - 70px);" layout="row" layout-align="start center">
+            <!-- <div class="v" style="height:calc(100% - 70px);" layout="row" layout-align="start center">
               <div class="vh brdRad pt" layout="row" layout-align="center center" style="width:285px;height:35px;background:#3378f09c">
                 <h5 class="px18 clr4 hw" style="font-family: PoppinsSemiBold;" (click)="playVideo()">Play Video</h5>
               </div>
-            </div> 
-            <!-- <div class="h" style="height:calc(100% - 70px);" layout="row" layout-align="start center">
-                <div class="v" *ngFor="let vedio of chapterItem?.videoId ; let i = index " (click)="GetVideo(vedio,chapterItem?.title,i)" style="width:20%;padding:0px 20px;">
+            </div>  -->
+            <div class="h" style="height:calc(100% - 70px);" layout="row" layout-align="start center">
+                <div class="v" *ngFor="let vedio of chapterItem?.videoId ; let i = index " (click)="playVideo(vedio)" style="width:30%;padding:0px 20px;">
                     <div class="b" style="box-shadow: 0 0 15px 5px rgb(232 234 236 / 80%);height: 100%;border-radius: 10px;">
-                        <div class="h brdRad" style="height:80%;padding: 10px;" layout="row" layout-align="center center">
+                        <!-- <div class="h brdRad" style="height:80%;padding: 10px;" layout="row" layout-align="center center">
                           <img *ngIf="vedio.videoViewStatus" class="video-thubnails-right-tick" src='assets/images/bookmark_right_tick.svg'>
                           <img *ngIf="vedio.thumbnail" src={{vedio.thumbnail}} style="width: 100%;height: 100%;" />
                           <img *ngIf="!vedio.thumbnail"src="assets/images/clientlogo512.png" style="width: 100%;height: 100%;">
-                        </div>
-                        <div class="h" style="height:20%;padding: 0px 20px;" layout="row" layout-align="start center">
+                        </div> -->
+                        <div class="h" style="height:100%;padding: 0px 20px;" layout="row" layout-align="start center">
                           <h5 class="px13 lw">{{vedio.title}}</h5>
                         </div>
                     </div>
                 </div>
-            </div> -->
+            </div>
         </div>
       </div>
     </div>

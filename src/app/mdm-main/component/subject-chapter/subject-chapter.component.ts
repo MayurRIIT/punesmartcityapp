@@ -60,47 +60,47 @@ export class SubjectChapterComponent implements OnInit {
     this.router.navigate(['/mdm-home/pdf-viewer'], { queryParams: { subjectId: this.subjectId } });
   }
 
-  playVideo(){
+  playVideo(item : any){
     
-    let videoName = '1.mp4';
-    if(this.subjectId == 'English'){
-      videoName = '2.mp4'
-    }
-    if(this.subjectId == 'Maths1'){
-      videoName = '3.mp4'
-    }
-    this.router.navigate(['/mdm-home/video-viewer'], { queryParams: { videoId: videoName } });
+    // let videoName = '1.mp4';
+    // if(this.subjectId == 'English'){
+    //   videoName = '2.mp4'
+    // }
+    // if(this.subjectId == 'Maths1'){
+    //   videoName = '3.mp4'
+    // }
+    this.router.navigate(['/mdm-home/video-viewer'], { queryParams: { videoUrl: item.url } });
 
-  }
-
-  GetChapters() {
-    this.services.getChapterList(this.subjectId,localStorage.getItem(Constants.DATACONTENTTYPE)).subscribe((response) => {
-      console.log('=======response========&&&&&&&&&&&&&==========>', response);
-      if(response && response.length > 0)
-        this.chapters = response;
-    });
   }
 
   // GetChapters() {
   //   this.services.getChapterList(this.subjectId,localStorage.getItem(Constants.DATACONTENTTYPE)).subscribe((response) => {
   //     console.log('=======response========&&&&&&&&&&&&&==========>', response);
-  //     if (response.status = "ACTIVE") {
-  //       this.chapters = [];
-
-  //       this.videoCount = 0;
-  //       response.result.forEach((element : any) => {
-  //           this.videoCount = this.videoCount + (element.videoId ? element.videoId.length : 0);
-  //           if(element.videoId && element.videoId.length > 0){
-  //             element.videoId.sort(function (a : any, b : any) {
-  //               return a.videoNumber - b.videoNumber;
-  //             });
-  //             this.chapters.push(element);
-  //           }
-  //       });
-  //       console.log(this.chapters);
-  //     }
+  //     if(response && response.length > 0)
+  //       this.chapters = response;
   //   });
   // }
+
+  GetChapters() {
+    this.services.getChapterList(this.subjectId,localStorage.getItem(Constants.DATACONTENTTYPE)).subscribe((response) => {
+      console.log('=======response========&&&&&&&&&&&&&==========>', response);
+      if (response.status = "ACTIVE") {
+        this.chapters = [];
+
+        this.videoCount = 0;
+        response.result.forEach((element : any) => {
+            this.videoCount = this.videoCount + (element.videoId ? element.videoId.length : 0);
+            if(element.videoId && element.videoId.length > 0){
+              element.videoId.sort(function (a : any, b : any) {
+                return a.videoNumber - b.videoNumber;
+              });
+              this.chapters.push(element);
+            }
+        });
+        console.log(this.chapters);
+      }
+    });
+  }
 
   //GET all Get Watched History
   getWatchedHistory() {

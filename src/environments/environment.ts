@@ -2,12 +2,14 @@
 // `ng build` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
   
-let ApiBaseUrl = `https://content.edulight.in/supermind/`;
+//let ApiBaseUrl = `https://content.edulight.in/supermind/`;
+
+let ApiBaseUrl = `https://api.marathidigimadhyam.com`;
 
 export const environment = {
   production: false,
-  //api: `${ApiBaseUrl}/user`,
-  api: `${ApiBaseUrl}`,
+  api: `${ApiBaseUrl}/user`,
+  //api: `${ApiBaseUrl}`,
   firebaseConfig : {
     apiKey: "AIzaSyCv3ucyGRykt2odqgWD9Y1krcjp8s_4ZA0",
     authDomain: "sakal-312705.firebaseapp.com",
